@@ -74,11 +74,6 @@ void loop() {
   float velocidad = sqrt((2*abs(presion))/1.183);
   Serial.print(velocidad,3);Serial.print("\t");
   ///////////////////////////////////////////
-  float velocidad1 = velocidad*100;
-  float velocidad2 = velocidad1;
-
-  //////////////////////////////////////////
-  //
   tiempo=millis();
   Serial.print(tiempo);Serial.print("\t");
   boolean paro = digitalRead(7);
